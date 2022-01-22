@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts' as *;
 
 //Hamburger Menu
 .nav-toggle {
@@ -17,8 +17,7 @@
   }
 }
 
-//Create a lines for menu
-
+//Create 3 lines for menu
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -41,13 +40,13 @@
   transform: translateY(3px);
 }
 
+//Hides Menu Links
 .nav {
   visibility: hidden;
   height: 0;
   padding: 1em 0 0 0;
   text-transform: uppercase;
   font-weight: 500;
-
   &__list {
     list-style: none;
     @include media-query(medium) {
@@ -55,8 +54,7 @@
       gap: 1em;
     }
   }
-  &__link {
-    text-decoration: none;
+  &__link { 
     color: white;
     &:hover,
     &:focus {
@@ -73,9 +71,9 @@
   }
   @include media-query(medium) {
     visibility: visible;
-    height: auto;
-    display: flex;
+   // height: auto;
     position: relative;
+    display: flex;
     padding: 0;
   }
 }

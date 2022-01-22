@@ -1,12 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #2e323f;
+  color: white;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif, sans-serif;
+}
+
+.nav__link {
+  font-family: "Oswald", sans-serif, sans-serif;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
   background: #cecece;
 }
 
@@ -28,7 +46,6 @@ main {
 }
 
 header {
-  background: teal;
   text-align: center;
   padding: 1em 0;
   position: fixed;
@@ -95,7 +112,6 @@ header {
   }
 }
 .nav__link {
-  text-decoration: none;
   color: white;
 }
 .nav__link:hover, .nav__link:focus {
@@ -112,9 +128,8 @@ header {
 @media (min-width: 1000px) {
   .nav {
     visibility: visible;
-    height: auto;
-    display: flex;
     position: relative;
+    display: flex;
     padding: 0;
   }
 }

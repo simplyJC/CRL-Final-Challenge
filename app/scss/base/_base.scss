@@ -1,8 +1,4 @@
-@use 'typography';
-@use '../abstracts' as *;
-
 body {
-  font-family: typography.$montserrat;
   background: rgb(206, 206, 206);
 }
 .hero {
@@ -10,11 +6,6 @@ body {
 }
 h1 {
   padding: 1em;
-  // @include media-query(medium){
-  //   padding: 0 0.5em 0 0;
-  // }
-  
-
 }
 p {
   line-height: 1.5em;

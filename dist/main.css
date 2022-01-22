@@ -16,6 +16,10 @@ header {
   color: white;
 }
 
+.color-yellow-gray {
+  background: #a59678;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif, sans-serif;
 }
@@ -104,11 +108,14 @@ header {
 }
 .nav__list {
   list-style: none;
+  padding: 1em 0 0 0;
 }
 @media (min-width: 1000px) {
   .nav__list {
     display: flex;
     gap: 1em;
+    padding: 1rem;
+    align-items: center;
   }
 }
 .nav__link {
@@ -147,4 +154,9 @@ header {
   margin: 0 auto;
   position: relative;
   text-align: center;
+}
+
+.btn {
+  border-radius: 1em;
+  padding: 0.1em 1em;
 }/*# sourceMappingURL=main.css.map */

@@ -49,9 +49,12 @@
   font-weight: 500;
   &__list {
     list-style: none;
+    padding: 1em 0 0 0;
     @include media-query(medium) {
       display: flex;
       gap: 1em;
+      padding: 1rem;
+      align-items: center;
     }
   }
   &__link { 

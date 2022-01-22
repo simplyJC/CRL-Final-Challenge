@@ -1,0 +1,45 @@
+@use 'sass:map';
+
+$breakpoints: (
+  small: 700px,
+  medium: 1000px,
+  large: 1200px,
+);
+
+@mixin media-query($key) {
+  $size: map-get($breakpoints, $key);
+
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+// //Media Queries
+// @media (min-width: 800px) {
+//   // .nav-toggle {
+//   //   display: none;
+//   // }
+//   .nav {
+//     visibility: visible;
+//     height: auto;
+//     display: flex;
+//     position: relative;
+//     padding: 0;
+//     //align-items: center;
+//     //justify-content: flex-end;
+//   }
+//   .row {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+//   .nav__list {
+//     display: flex;
+//     gap: 1em;
+//   }
+//   h1 {
+//     padding: 0 0.5em 0 0;
+//   }
+//   p {
+//     padding: 0 1em;
+//   }
+// }

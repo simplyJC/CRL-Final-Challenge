@@ -1,4 +1,11 @@
+@use '../base' as *; 
 .btn{
     border-radius: 1em;
     padding:0.1em  1em ;
+}
+.hero__btn{
+    text-decoration: none;
+    border: none;
+    padding: 0 1em;
+    border-radius: 2rem;
 }

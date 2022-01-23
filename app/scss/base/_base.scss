@@ -1,16 +1,16 @@
-body {
-  background: rgb(206, 206, 206);
-}
-.hero {
-  padding: 1em;
-}
+@use '../abstracts' as *;
+
 h1 {
-  padding: 1em;
-}
-p {
-  line-height: 1.5em;
-  text-align: left;
+  text-align: center;
+  @include media-query(medium){
+    text-align: left;
+  }
+  
 }
 main {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
+
+
+
+

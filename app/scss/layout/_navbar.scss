@@ -1,6 +1,13 @@
 @use '../abstracts' as *;
 
 //Hamburger Menu
+.container-nav {
+  width: 90%;
+  max-width: 1330px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
 .nav-toggle {
   width: 3em;
   height: 3em;
@@ -80,7 +87,7 @@
     padding: 0;
   }
 }
-.row {
+.row-nav {
   @include media-query(medium) {
     display: flex;
     justify-content: space-between;

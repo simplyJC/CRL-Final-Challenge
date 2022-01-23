@@ -1,8 +1,39 @@
 @use 'fonts' as *;
+@use '../abstracts' as *;
 
-h1{
-    font-family: $montserrat, sans-serif; 
+.hero__title {
+  font-family: $oswald, sans-serif;;
+  font-size: clamp(2rem, 8vw, 4rem);
+  //padding-right: 2rem;
+  
 }
-.nav__link{
-    font-family: $oswald, sans-serif;
+.nav__link {
+  font-family: $oswald, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+p {
+  font-family: $montserrat;
+}
+.hero__content {
+  font-size: clamp (1.2rem, 4vw, 1.8rem);
+  text-align: center;
+  @include media-query(medium) {
+    text-align: left;
+  }
+}
+.hero__btn {
+  font-family: $oswald;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.features__title{
+    font-family: $oswald;
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
 }

@@ -1,15 +1,15 @@
 @use '../abstracts' as *;
 
-h1 {
-  text-align: center;
-  @include media-query(medium){
-    text-align: left;
-  }
+// h1 {
+//   text-align: center;
+//   @include media-query(medium){
+//     text-align: left;
+//   }
   
-}
-main {
-  padding-top: 4rem;
-}
+// }
+// main {
+//   padding-top: 4rem;
+// }
 
 
 

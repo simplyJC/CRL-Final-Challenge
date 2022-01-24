@@ -2,11 +2,12 @@
 
 //Hamburger Menu
 .container-nav {
-  width: 90%;
-  max-width: 1330px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   text-align: center;
+  padding-inline: 1rem;
 }
 .nav-toggle {
   width: 3em;
@@ -18,7 +19,8 @@
   border: 0;
   cursor: pointer;
   position: absolute;
-  left: 0;
+  left: 1rem;
+  
   @include media-query(medium) {
     display: none;
   }

@@ -15,11 +15,6 @@ img {
   max-width: 100%;
 }
 
-header {
-  background: #2e323f;
-  color: white;
-}
-
 .color-yellow-gray {
   background: #a59678;
 }
@@ -38,6 +33,10 @@ header {
 
 .color-gray {
   background: #3b4050;
+}
+
+.color-dark-gray {
+  background: #2e323f;
 }
 
 .hero__title {
@@ -72,7 +71,7 @@ p {
   text-transform: uppercase;
 }
 
-.features__title {
+.features__title, .article__title {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
 }
@@ -81,17 +80,14 @@ p {
   text-align: center;
 }
 
-h1 {
+.article__title {
   text-align: center;
+  padding: 1rem 0;
 }
 @media (min-width: 1000px) {
-  h1 {
+  .article__title {
     text-align: left;
   }
-}
-
-main {
-  padding-top: 4rem;
 }
 
 header {
@@ -104,11 +100,12 @@ header {
 }
 
 .container-nav {
-  width: 90%;
-  max-width: 1330px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   text-align: center;
+  padding-inline: 1rem;
 }
 
 .nav-toggle {
@@ -121,7 +118,7 @@ header {
   border: 0;
   cursor: pointer;
   position: absolute;
-  left: 0;
+  left: 1rem;
 }
 @media (min-width: 1000px) {
   .nav-toggle {
@@ -201,37 +198,16 @@ header {
   }
 }
 
-.row {
-  padding: 1rem 0;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.column {
-  padding: 0 1rem;
-}
-
-.hero {
-  padding: 3rem 0;
-}
-
-.features__title {
-  padding: 1rem;
-}
-
-.features {
-  padding: 2rem 0;
-}
-
 .container {
   display: flex;
-  padding: clamp(1.5rem, 2vw, 2rem);
-  flex-direction: column;
+  padding-inline: 1rem;
+  margin-inline: auto;
+  justify-self: center;
 }
 @media (min-width: 1000px) {
   .container {
     flex-direction: row;
-    max-width: 1400px;
+    max-width: 1200px;
   }
 }
 
@@ -250,6 +226,24 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.row {
+  padding: 1rem 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 3rem 0;
+}
+
+.features__title {
+  padding: 1rem;
+}
+
+.features {
+  padding: 2rem 0;
 }
 
 .btn {

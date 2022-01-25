@@ -1,54 +1,57 @@
 @use 'fonts' as *;
 @use '../abstracts' as *;
 
-%align-text{
-  font-family: $oswald, sans-serif;;
+%align-text {
+  font-family: $font-primary, sans-serif;
   font-size: clamp(2rem, 8vw, 4rem);
 }
 
-.hero__title {
-  font-family: $oswald, sans-serif;;
-  font-size: clamp(2rem, 8vw, 4rem);
-  //padding-right: 2rem;
-  
-}
 .nav__link {
-  font-family: $oswald, sans-serif;
+  font-family: $font-primary, sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
 p {
-  font-family: $montserrat;
+  font-family: $font-secondary;
+}
+.hero__title {
+  font-family: $font-primary, sans-serif;
+  font-size: clamp(2rem, 8vw, 6rem);
+  line-height: clamp(2rem, 8vw, 6rem);
+  //padding-right: 2rem;
 }
 .hero__content {
-  font-size: clamp (1.2rem, 4vw, 1.8rem);
-  text-align: center;
-  @include media-query(medium) {
-    text-align: left;
-  }
+  //text-align: center;
+  font-family: $font-secondary;
+
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  //font-size: 24px;
+
+  // @include media-query(medium) {
+  //   text-align: left;
+  // }
 }
 .hero__btn {
-  font-family: $oswald;
+  font-family: $font-primary;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
 }
 
-.features__title{
-    font-family: $oswald;
-    font-weight: bold;
+.features__title {
+  font-family: $font-primary;
+  font-weight: bold;
 }
 
-.text-center{
-    text-align: center;
-}
+// .text-center {
+//   text-align: center;
+// }
 
-.article__title{
-  @extend .features__title;  
-  text-align: center;
-  padding: 1rem 0;
-  @include media-query(medium) {
-    text-align: left;
-  }
-}
-
+// .article__title {
+//   @extend .features__title;
+//   text-align: center;
+//   padding: 1rem 0;
+//   @include media-query(medium) {
+//     text-align: left;
+//   }
+// }

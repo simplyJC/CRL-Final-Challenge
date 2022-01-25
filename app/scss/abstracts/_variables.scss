@@ -1,14 +1,13 @@
-
 $breakpoints: (
-  small: 700px,
-  medium: 1000px,
-  large: 1200px,
+  //small: 700px,
+  medium: 700px,
+  large: 1000px,
 );
 
-
-$dark-gray: #2e323f;
-$gray: #3b4050;
-$light-gray: #6f737f;
-$yellow-gray: #a59678;
-$white: #979292;
-
+$colors: (
+  "dark-gray": #2e323f,
+  "gray": #3b4050,
+  "light-gray": #6f737f,
+  "yellow-gray": #a59678,
+  "white": #ffffff,
+);

@@ -1,20 +1,9 @@
 @use '../abstracts' as *;
-
-.color-yellow-gray {
-  background: $yellow-gray;
-}
-.text-white {
-  color: rgb(255, 255, 255);
-}
-.text-yellow-gray {
-  color: $yellow-gray;
-}
-.color-light-gray {
-  background: lighten($light-gray, 50%);
-}
-.color-gray {
-  background: $gray;
-}
-.color-dark-gray {
-  background: $dark-gray;
+@each $key, $value in $colors{
+  .text-#{$key}{
+    color: $value;
+  }
+  .bg-#{$key}{
+    background: $value; 
+  }
 }

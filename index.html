@@ -8,7 +8,7 @@
     <title>CRL Final Challenge</title>
   </head>
   <body>
-    <header class="header color-dark-gray text-white">
+    <header class="header bg-dark-gray text-white">
       <div class="container-nav row-nav">
         <button class="nav-toggle">
           <span class="hamburger"></span>
@@ -31,15 +31,15 @@
               <a class="nav__link" href="#">Sign In</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link btn color-yellow-gray" href="#">Sign up</a>
+              <a class="nav__link btn bg-yellow-gray" href="#">Sign up</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="hero color-gray">
-        <div class="container">
+      <section id="hero" class="bg-gray">
+        <div class="container hero">
           <div class="column hero__title-container">
             <h1 class="hero__title">
               <span class="text-white">Responsive layouts</span>
@@ -55,7 +55,7 @@
             </div>
 
             <div class="row hero__btn-container">
-              <button class="hero__btn color-yellow-gray">
+              <button class="hero__btn bg-yellow-gray">
                 <a href="#" class="text-white"> I want to learn </a>
               </button>
             </div>
@@ -63,27 +63,27 @@
         </div>
       </section>
       <!-- Second Section -->
-      <section class="features color-light-gray">
-        <div class="container">
-          <div class="column text-center">
+      <section class="features">
+        <div class="container features__container">
+          <div class="column features__card">
             <h2 class="features__title text-yellow-gray">Mobile-first</h2>
-            <p class="featues__content">
+            <p class="features__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
-          <div class="column text-center">
+          <div class="column features__card">
             <h2 class="features__title text-yellow-gray">Efficient</h2>
-            <p>
+            <p class="features__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
-          <div class="column text-center">
+          <div class="column features__card">
             <h2 class="features__title text-yellow-gray">Done Right</h2>
-            <p>
+            <p class="features__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
@@ -94,17 +94,19 @@
 
       <!-- article section -->
       <section class="article">
-        <div class="container">
+        <div class="container article__container">
           <article>
-            <div class="row">
-              <h2 class="article__title text-yellow-gray">It doesn’t have to be so hard</h2>
-              <p class="article__content ">
+            <div class="row article__content">
+              <h2 class="article__title text-yellow-gray">
+                It doesn’t have to be so hard
+              </h2>
+              <p class="article__content">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
                 unde, id accusamus itaque aliquam nisi officia facilis. Mollitia
                 animi nam expedita iste ducimus beatae maxime veritatis
                 reprehenderit harum, odio aliquam?
               </p>
-              <img src="https://picsum.photos/300/300" alt="" />
+              <img src="https://picsum.photos/650/500" alt="" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -115,28 +117,28 @@
             </div>
           </article>
           <aside>
-            <div class="column">
-              <div class="row">
-                <h3>Break it down</h3>
-                <p>
+            <div class="column article__cards">
+              <div class="row article__card bg-gray text-white">
+                <h3 class="article__card-title">Break it down</h3>
+                <p class="article__card-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div class="row">
-                <h3>Work your way up</h3>
-                <p>
+              <div class="row article__card bg-gray text-white">
+                <h3 class="article__card-title" >Work your way up</h3>
+                <p class="article__card-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <div class="row">
-                <h3>Lorem ipsum dolor sit ameta</h3>
-                <p>
+              <div class="row article__card bg-gray text-white">
+                <h3 class="article__card-title" >Lorem ipsum dolor sit ameta</h3>
+                <p class="article__card-content">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Expedita quibusdam perferendis quam numquam! Consectetur ut
-                  vel unde reprehenderit minima odit quo similique deleniti eos
-                  facere, laborum sequi maiores ratione molestiae!
+                  vel unde reprehenderit minima odit
+  
                 </p>
               </div>
             </div>

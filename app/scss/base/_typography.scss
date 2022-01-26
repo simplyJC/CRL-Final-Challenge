@@ -52,3 +52,8 @@ p {
 .article__card-title{
   font-family: $font-primary;
 }
+
+/*Footer*/
+.footer__title{
+  font-size: clamp(2rem, 3vw, 4rem);
+}

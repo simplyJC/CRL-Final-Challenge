@@ -109,6 +109,11 @@ p {
   font-family: "Oswald", sans-serif;
 }
 
+/*Footer*/
+.footer__title {
+  font-size: clamp(2rem, 3vw, 4rem);
+}
+
 .btn {
   border-radius: 1em;
   padding: 0.1em 1em;

@@ -2,13 +2,19 @@
 
 //Hamburger Menu
 .container-nav {
-//width: 100%;
+  //width: 100%;
   //max-width: 900px;
-  width: max(80%, 600px);
+  @include media-query(medium) {
+    width: max(80%, 600px);
+  }
+  // @include media-query(large) {
+  //   width: max(80%, 1000px);
+  // }
+  //
   margin: 0 auto;
   position: relative;
   text-align: center;
- // padding-inline: 1rem;
+  // padding-inline: 1rem;
 }
 .nav-toggle {
   width: 3em;
@@ -21,7 +27,7 @@
   cursor: pointer;
   position: absolute;
   left: 1rem;
-  
+
   @include media-query(medium) {
     display: none;
   }
@@ -52,14 +58,14 @@
 
 //Hides Menu Links
 
-
 .nav {
   visibility: hidden;
   height: 0;
   padding: 1em 0 0 0;
   text-transform: uppercase;
   font-weight: 500;
-  gap: 2rem; 
+  gap: 2rem;
+  //align-items: center;
   &__list {
     list-style: none;
     padding: 1em 0 0 0;
@@ -70,7 +76,7 @@
       align-items: center;
     }
   }
-  &__link { 
+  &__link {
     color: white;
     &:hover,
     &:focus {
@@ -87,7 +93,7 @@
   }
   @include media-query(medium) {
     visibility: visible;
-   // height: auto;
+    // height: auto;
     position: relative;
     display: flex;
     padding: 0;

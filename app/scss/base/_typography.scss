@@ -14,22 +14,16 @@
 p {
   font-family: $font-secondary;
 }
+
+/*Hero Section*/
 .hero__title {
   font-family: $font-primary, sans-serif;
   font-size: clamp(2rem, 8vw, 6rem);
   line-height: clamp(2rem, 8vw, 6rem);
-  //padding-right: 2rem;
 }
 .hero__content {
-  //text-align: center;
   font-family: $font-secondary;
-
   font-size: clamp(1.2rem, 2vw, 1.5rem);
-  //font-size: 24px;
-
-  // @include media-query(medium) {
-  //   text-align: left;
-  // }
 }
 .hero__btn {
   font-family: $font-primary;
@@ -38,14 +32,23 @@ p {
   text-transform: uppercase;
 }
 
+/*Features Section*/
 .features__title {
   font-family: $font-primary;
   font-weight: bold;
 }
 
-.footer__title{
+.footer__title {
   font-family: $font-primary;
   font-size: 1.5rem;
 }
 
+/*Articles Section*/
+.article__title{
+   font-family: $font-primary;
+  font-size: 1.5rem;
 
+}
+.article__card-title{
+  font-family: $font-primary;
+}

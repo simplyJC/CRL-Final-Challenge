@@ -1,0 +1,38 @@
+@use '../abstracts/' as *;
+
+.footer {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &-links {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+      gap: 1rem;
+
+      @include media-query(medium) {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+      & h3 {
+        padding: 1rem 0;
+      }
+      & li {
+        cursor: pointer;
+        padding: 0.3rem 0;
+      }
+    }
+  }
+  &__title {
+    padding: 1rem 0;
+  }
+  &__about {
+    @include media-query(medium) {
+      width: 30%;
+      text-align: left;
+    }
+  }
+}

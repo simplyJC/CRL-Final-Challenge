@@ -1,4 +1,4 @@
-@use '../abstracts' as *; 
+@use '../abstracts' as *;
 header {
   text-align: center;
   padding: 1em 0;
@@ -6,7 +6,4 @@ header {
   top: 0;
   width: 100%;
   z-index: 99;
-  // background: $dark-gray;
-  // color: rgb(255, 255, 255); 
 }
-

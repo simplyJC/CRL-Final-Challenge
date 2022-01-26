@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+.features {
+  background: lighten(map-get($colors, 'light-gray'), 45%);
+  padding: 2rem 0;
+  text-align: center;
+  &__card {
+    padding: 1.5rem 0;
+  }
+  &__title {
+    padding: 1rem 0;
+  }
+  &__description {
+    padding: 0 4rem;
+    @include media-query(medium) {
+      padding: 0 2rem;
+    }
+  }
+}

@@ -15,6 +15,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 .text-dark-gray {
   color: #2e323f;
 }
@@ -86,6 +90,11 @@ p {
 .features__title {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+}
+
+.footer__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -295,6 +304,12 @@ header {
     text-align: left;
   }
 }
+.article__title {
+  padding: 1rem 0;
+}
+.article__img {
+  padding: 1rem 0;
+}
 .article__container {
   padding: 3rem 0;
   display: flex;
@@ -310,11 +325,11 @@ header {
   }
 }
 .article__content {
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 @media (min-width: 700px) {
   .article__content {
-    text-align: center;
+    text-align: left;
   }
 }
 .article__cards {
@@ -346,4 +361,39 @@ header {
 }
 .article__card-content {
   padding: 1rem 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer__container-links {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+@media (min-width: 700px) {
+  .footer__container-links {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.footer__container-links h3 {
+  padding: 1rem 0;
+}
+.footer__container-links li {
+  cursor: pointer;
+  padding: 0.3rem 0;
+}
+.footer__title {
+  padding: 1rem 0;
+}
+@media (min-width: 700px) {
+  .footer__about {
+    width: 30%;
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -43,15 +43,9 @@ p {
   font-weight: bold;
 }
 
-// .text-center {
-//   text-align: center;
-// }
+.footer__title{
+  font-family: $font-primary;
+  font-size: 1.5rem;
+}
 
-// .article__title {
-//   @extend .features__title;
-//   text-align: center;
-//   padding: 1rem 0;
-//   @include media-query(medium) {
-//     text-align: left;
-//   }
-// }
+
